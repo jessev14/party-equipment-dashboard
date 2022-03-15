@@ -1,0 +1,28 @@
+<div class="party-equipment-dashboard">
+    {{#each partyMembers as |actor id|}}
+    <div class="party-member">
+        <h2>{{actor.name}}</h2>
+        <div class="party-member-items">
+            {{#each actor.items as |item id|}}
+            <div class="equipment">
+                {{!-- <img class="equipment-img" src="{{item.img}}" /> --}}
+                <div class="equipment-name">
+                    {{item.name}}
+                </div>
+                {{#if (eq item.type "weapon")}}
+                <label>
+                    Damage Formula:
+                    <input class="damage-input" data-actor-id="{{actor.id}}" data-item-id="{{item.id}}" value="{{item.data.data.damage.parts.[0].[0]}}"/>
+                </label>
+                {{else}}
+                <label>
+                    Armor Class:
+                    <input class="ac-input" data-actor-id="{{actor.id}}" data-item-id="{{item.id}}" value="{{item.data.data.armor.value}}"/>
+                </label>
+                {{/if}}
+            </div> 
+            {{/each}}
+        </div>
+    </div>
+    {{/each}}
+</div>

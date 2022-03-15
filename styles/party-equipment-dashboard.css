@@ -1,0 +1,43 @@
+.party-equipment-dashboard {
+
+}
+
+.party-equipment-dashboard .party-member {
+
+}
+
+.party-equipment-dashboard .party-member h2 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+
+.party-equipment-dashboard .party-member .party-member-items{
+
+}
+
+.party-equipment-dashboard .party-member .party-member-items .equipment {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.party-equipment-dashboard .party-member .party-member-items .equipment > * {
+    flex: 1
+}
+
+.party-equipment-dashboard .party-member .party-member-items .equipment .equipment-img {
+    flex: unset;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.party-equipment-dashboard .party-member .party-member-items .equipment input {
+    width: 160px;
+    height: 24px;
+    border: 1px solid #7a7971;
+    background: rgba(0, 0, 0, 0.05);
+}
