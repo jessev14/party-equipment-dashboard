@@ -11,6 +11,8 @@ This module was funded by a commission. Donations help fund updates and new modu
 
 Party Equipment Dashboard implements a dashboard for GM users to easily and quickly change armor AC and weapon damage formulas of party members.
 
+For the dnd5e system.
+
 <img src="/img/party-equipment-dashboard.png" />
 
 ## Technical Notes
