@@ -5,6 +5,15 @@ export const moduleName = "party-equipment-dashboard";
 
 Hooks.once("init", () => {
     game.modules.get(moduleName).api = {PartyEquipmentDashBoard: new PartyEquipmentDashBoard};
+
+    game.settings.register(moduleName, "filterEquipped", {
+        name: "Include Equipped Items Only",
+        hint: "",
+        scope: "world",
+        config: true,
+        type: Boolean,
+        default: true
+    });
 });
 
 

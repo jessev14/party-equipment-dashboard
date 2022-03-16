@@ -34,6 +34,8 @@ export class PartyEquipmentDashBoard extends Application {
             const weapons = partyMember.items.filter(i => i.type === "weapon");
             partyMemberData.items.push(...weapons);
 
+            if (game.settings.get(moduleName, "filterEquipped")) partyMemberData.items = partyMemberData.items.filter(i => i.data.data.equipped);
+
             data.partyMembers.push(partyMemberData);
         }
 
