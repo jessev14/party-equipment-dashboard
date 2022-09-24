@@ -1,7 +1,7 @@
 {
     "name": "party-equipment-dashboard",
     "title": "Party Equipment Dashboard",
-    "description": "Log an alert in chat when certain changes to an actor are made.",
+    "description": "Quickly change armor AC and weapon damage dice.",
     "version": "1.0.0",
     "author": "enso#0361",
     "sytem": [
